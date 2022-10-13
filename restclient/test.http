@@ -1,12 +1,24 @@
 ### GET One
-GET localhost:8080/product/1
+GET localhost:8080/product/v3/1
 
 ### UPDATE One
-PUT localhost:8080/product/1
+PUT localhost:8080/product/v3/1
 Content-Type: application/json
 
 {
   "description": "Product 1 description",
   "price": 100
 }
+
+###
+PUT localhost:8080/product/v2/1
+Content-Type: application/json
+
+{
+"description": "Product 1 description",
+"price": 100
+}
+
+### DELETE One
+DELETE localhost:8080/product/v3/1
 

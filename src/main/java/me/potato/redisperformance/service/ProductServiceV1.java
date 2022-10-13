@@ -24,7 +24,4 @@ public class ProductServiceV1 {
     public Mono<Product> createProduct(Mono<Product> productMono) {
         return productMono.flatMap(repository::save);
     }
-
-
-
 }

@@ -24,8 +24,8 @@ public abstract class CacheTemplate<KEY, ENTITY> {
     abstract protected Mono<ENTITY> getFromSource(KEY key);
     abstract protected Mono<ENTITY> getFromCache(KEY key);
 
-    abstract protected Mono<ENTITY> updateSource(KEY key, ENTITY entityMono);
-    abstract protected Mono<ENTITY> updateCache(KEY key, ENTITY entityMono);
+    abstract protected Mono<ENTITY> updateSource(KEY key, ENTITY entity);
+    abstract protected Mono<ENTITY> updateCache(KEY key, ENTITY entity);
 
     abstract protected Mono<Void> deleteFromSource(KEY key);
     abstract protected Mono<Void> deleteFromCache(KEY key);
