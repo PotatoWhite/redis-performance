@@ -1,0 +1,12 @@
+### GET One
+GET localhost:8080/product/1
+
+### UPDATE One
+PUT localhost:8080/product/1
+Content-Type: application/json
+
+{
+  "description": "Product 1 description",
+  "price": 100
+}
+
